@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About PMR Data Consulting",
+      "description": "Details about the company",
+      "author": [],
+      "contents": "\nHey\n\n\n\n",
+      "last_modified": "2024-08-11T13:07:05-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "PMR Data Consulting",
+      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2024-08-11T13:07:05-04:00"
+    },
+    {
+      "path": "projects.html",
+      "title": "Projects",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2024-08-11T13:07:06-04:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

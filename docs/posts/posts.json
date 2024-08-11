@@ -1,0 +1,26 @@
+[
+  {
+    "path": "posts/OFB/",
+    "title": "OFB (w D4GO)",
+    "description": "Work we (Data For Good Ottawa) did for the Ottawa Food Bank",
+    "author": [],
+    "date": "2024-08-11",
+    "categories": [],
+    "contents": "\nSome OFB results here\n\n\n\n",
+    "preview": {},
+    "last_modified": "2024-08-11T13:05:47-04:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/Youville/",
+    "title": "Youville Centre (w D4GO)",
+    "description": "Work we (Data For Good Ottawa) did for the Youville Centre",
+    "author": [],
+    "date": "2024-08-11",
+    "categories": [],
+    "contents": "\nSome YC results here\n\n\n\n",
+    "preview": {},
+    "last_modified": "2024-08-11T13:05:33-04:00",
+    "input_file": {}
+  }
+]
