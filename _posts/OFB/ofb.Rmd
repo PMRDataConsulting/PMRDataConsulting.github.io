@@ -1,6 +1,6 @@
 ---
-title: "OFB (w D4GO)"
-description: Work we (Data For Good Ottawa) did for the Ottawa Food Bank
+title: "Product Demand Analysis"
+description: Impactful insights hidden in demand data
 date: 08-11-2024
 output:
     distill::distill_article:
