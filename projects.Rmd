@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <br>       
         
          
-Some of these projects were conducted with the Data For Good Ottawa team, they are marked as *w D4GO*, and we have permission to share the results here. We have nevertheless fuzzified the details so that any details are no longer relevant, yet still illustrate the type of work done.  
+These are some examples of projects that we've conducted. They are illustrative of the range of problems we can help you with.
+
+
 <br>
-Some others were conducted for other companies and are subject to NDAs. For these we provide rough details of what was done.

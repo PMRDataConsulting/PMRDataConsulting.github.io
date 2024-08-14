@@ -11,29 +11,73 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-**All real-world data sets contain anomalies**. They may be data entry errors, coding errors, or some facet of your business that you do not yet understand.
+[**Peter Rabinovitch**](https://www.linkedin.com/in/peter-rabinovitch/)
+is the founder of PMR Data Consulting. He has extensive real world data
+science experience with some of the largest technology companies in the
+world, as well as a PhD in Probability and Statistics.
 
-The important question is what do they mean to my business?  
-- How can you modify the data entry procedure to eliminate the errors?  
-- What code need to be changed and how can you prevent similar errors from happening again?  
-- What insights are they clues to?  
+He has co-lead [Data For Good Ottawa](https://ottawa.dataforgood.ca/), a
+group of volunteer data scientists who apply their expertise to solving
+the problems of local charities.
 
-Even the best data sets contain anomalies, and it is the job of the data scientist to ensure that they are caught,  mitigated, and most importantly, that the impact of any such anomalies is understood by stakeholders before business decisions are made.
+He teaches data science to MBA students at University of Ottawa.
 
-**PMR Data Consulting** specializes in helping businesses extract the most useful insights form their data. 
+<center>![](peter.png){width="25%"}</center>
 
+<br>
 
-But before such insights can be extracted, the data must be examined for anomalies, or, you will
-never know if the insight is genuine or a data error.
+These experiences have shaped his approach to data science:
 
-Similarly, running a statistical analysis without knowing the quality of
-the data it is run on, let alone any advanced (eg. machine learning or
-deep learning) method, is folly.
+<details>
 
-[**Peter Rabinovitch**](https://www.linkedin.com/in/peter-rabinovitch/) has
-extensive real world data science experience with some of the largest
-technology companies in the world, as well as a PhD in Probability and
-Statistics. 
+<summary>All real-world data sets contain anomalies</summary>
 
-He has also co-lead [Data For Good Ottawa](https://ottawa.dataforgood.ca/), a group of volunteer data scientists who apply their expertise to solving the problems of local charities.
+They may be data entry errors, coding errors, or some facet of your
+business that you do not yet understand.
 
+-   The important question is what do they mean to my business?
+
+    -   How can you modify the data entry procedure to eliminate the
+        errors?
+
+    -   What code need to be changed and how can you prevent similar
+        errors from happening again
+
+    -   What insights are they clues to?
+
+-   Even the best data sets contain anomalies, and it is the job of the
+    data scientist to ensure that they are caught, mitigated, and most
+    importantly, that the impact of any such anomalies is understood by
+    stakeholders before business decisions are made.
+
+</details>
+
+<details>
+
+<summary>Using just one number to describe any real-world scenario
+misses the point</summary>
+
+Any non-trivial problem is too complicated to be captured bu just one
+metric. One also need to know a likely range for the metric (eg. a
+confidence interval), and how this metric interacts with other metrics.
+
+-   For example would you prefer to make a decision on staring a project
+    knowing just the average ROI, or would you prefer to know the range
+    of likely ROIs the project would generate?
+
+</details>
+
+<details>
+
+<summary>Data science IS communication</summary>
+
+It is not enough to do statistics, machine learning, etc. The results
+must be communicated to stakeholders in their language in such a way
+that the implications of the data science work are clear, or the project
+will have no business impact, as people will not base decisions on what
+they don't understand.
+
+</details>
+
+Guided by these principles, **PMR Data Consulting** specializes in
+helping businesses extract the most useful insights from their data.

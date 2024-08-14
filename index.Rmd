@@ -9,6 +9,11 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+![Looking for insights in the data your business generates can be like looking for pearls on the beach.](pearls.JPG){width=700px, height=300px}
+
+
+
 Want to better understand your business via your data, but don't know where to start?
 <br>
 <br>
