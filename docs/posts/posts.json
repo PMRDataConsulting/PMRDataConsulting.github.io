@@ -1,26 +1,26 @@
 [
   {
+    "path": "posts/DonorBase/",
+    "title": "Donor Base",
+    "description": "Analyzing the size of a donor base",
+    "author": [],
+    "date": "2024-08-11",
+    "categories": [],
+    "contents": "\n\n\n\nIn the early 2000’s, there were many more new donors than lapsed donors. But as we progress we find that there are fewer new donors and more lapsed donors each year. In 2015 there were more lapsed donors than new donors for the first time.\nAlthough the details of this plot depend on how ‘new donor’ and ‘lapsed donor’ are defined, changing these definitions somewhat has little effect on the conclusion: the donor pool is shrinking.\n\n\n\n",
+    "preview": "posts/DonorBase/donorbase_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2024-08-14T10:19:07-04:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/OFB/",
     "title": "OFB (w D4GO)",
     "description": "Work we (Data For Good Ottawa) did for the Ottawa Food Bank",
     "author": [],
     "date": "2024-08-11",
     "categories": [],
-    "contents": "\nSome OFB results here\n\n\n\n",
+    "contents": "\nD4GO’s first project was for the Ottawa Food Bank, with the goal of understanding demand for different types of food in the different Ottawa wards, over time.\nOne of the most interesting insights found was that the Ottawa Food Bank was providing diapers for one-fifth of the two month old babies in the Rideau Vanier ward - quite a huge impact statement!\nWe discovered this with the aid of a quick app to allow users to zoom in on any food group, geographic area, and date range.\n\nA simplified version of this app is here, with fake data.\nNote this version is on a limited site:\n- if nobody has used it for a while the app may be ‘sleeping’ and may take a while to load\n- if the app has been used a lot, if may not load due to the maximum number of sessions. If this happens, try again later.\n\n\n\n",
     "preview": {},
-    "last_modified": "2024-08-11T13:05:47-04:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/Youville/",
-    "title": "Youville Centre (w D4GO)",
-    "description": "Work we (Data For Good Ottawa) did for the Youville Centre",
-    "author": [],
-    "date": "2024-08-11",
-    "categories": [],
-    "contents": "\nSome YC results here\n\n\n\n",
-    "preview": {},
-    "last_modified": "2024-08-11T13:05:33-04:00",
+    "last_modified": "2024-08-14T10:19:37-04:00",
     "input_file": {}
   }
 ]

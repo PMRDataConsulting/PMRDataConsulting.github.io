@@ -3,25 +3,25 @@
     {
       "path": "about.html",
       "title": "About PMR Data Consulting",
-      "description": "Details about the company",
+      "description": "Who we are and what we do\n",
       "author": [],
-      "contents": "\nHey\n\n\n\n",
-      "last_modified": "2024-08-11T13:07:05-04:00"
+      "contents": "\nAll real-world data sets contain anomalies. They may be data entry errors, coding errors, or some facet of your business that you do not yet understand.\nThe important question is what do they mean to my business?\n- How can you modify the data entry procedure to eliminate the errors?\n- What code need to be changed and how can you prevent similar errors from happening again?\n- What insights are they clues to?\nEven the best data sets contain anomalies, and it is the job of the data scientist to ensure that they are caught, mitigated, and most importantly, that the impact of any such anomalies is understood by stakeholders before business decisions are made.\nPMR Data Consulting specializes in helping businesses extract the most useful insights form their data.\nBut before such insights can be extracted, the data must be examined for anomalies, or, you will\nnever know if the insight is genuine or a data error.\nSimilarly, running a statistical analysis without knowing the quality of\nthe data it is run on, let alone any advanced (eg. machine learning or\ndeep learning) method, is folly.\nPeter Rabinovitch has\nextensive real world data science experience with some of the largest\ntechnology companies in the world, as well as a PhD in Probability and\nStatistics.\nHe has also co-lead Data For Good Ottawa, a group of volunteer data scientists who apply their expertise to solving the problems of local charities.\n\n\n\n",
+      "last_modified": "2024-08-14T10:19:54-04:00"
     },
     {
       "path": "index.html",
       "title": "PMR Data Consulting",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "description": "Specializing in extracting insights about your business\n",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2024-08-11T13:07:05-04:00"
+      "contents": "\nWant to better understand your business via your data, but don’t know where to start?\n\nWe are here to help.\n\nAt PMR Data Consulting, we specialize in extracting insights from your data. Our services are tailored to uncover hidden patterns to help you make better data-based business decisions.\n\nClick About to find out a little more about who we are, and Projects to see some of the work we’ve done.\n\nThen contact us at pmr.data.consulting@gmail.com to start a conversation.\n\n\n\n",
+      "last_modified": "2024-08-14T10:19:54-04:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2024-08-11T13:07:06-04:00"
+      "contents": "\n\nSome of these projects were conducted with the Data For Good Ottawa team, they are marked as w D4GO, and we have permission to share the results here. We have nevertheless fuzzified the details so that any details are no longer relevant, yet still illustrate the type of work done.\nSome others were conducted for other companies and are subject to NDAs. For these we provide rough details of what was done.\n\n\n\n",
+      "last_modified": "2024-08-14T10:19:55-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

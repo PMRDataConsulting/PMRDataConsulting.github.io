@@ -1,11 +1,39 @@
 ---
 title: "About PMR Data Consulting"
 description: |
-  Details about the company
+  Who we are and what we do
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Hey
+**All real-world data sets contain anomalies**. They may be data entry errors, coding errors, or some facet of your business that you do not yet understand.
+
+The important question is what do they mean to my business?  
+- How can you modify the data entry procedure to eliminate the errors?  
+- What code need to be changed and how can you prevent similar errors from happening again?  
+- What insights are they clues to?  
+
+Even the best data sets contain anomalies, and it is the job of the data scientist to ensure that they are caught,  mitigated, and most importantly, that the impact of any such anomalies is understood by stakeholders before business decisions are made.
+
+**PMR Data Consulting** specializes in helping businesses extract the most useful insights form their data. 
+
+
+But before such insights can be extracted, the data must be examined for anomalies, or, you will
+never know if the insight is genuine or a data error.
+
+Similarly, running a statistical analysis without knowing the quality of
+the data it is run on, let alone any advanced (eg. machine learning or
+deep learning) method, is folly.
+
+[**Peter Rabinovitch**](https://www.linkedin.com/in/peter-rabinovitch/) has
+extensive real world data science experience with some of the largest
+technology companies in the world, as well as a PhD in Probability and
+Statistics. 
+
+He has also co-lead [Data For Good Ottawa](https://ottawa.dataforgood.ca/), a group of volunteer data scientists who apply their expertise to solving the problems of local charities.
+

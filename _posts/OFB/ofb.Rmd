@@ -7,5 +7,18 @@ output:
         self_contained: false
 ---
 
+D4GO's first project was for the Ottawa Food Bank, with the goal of understanding demand for different types of food in the different Ottawa wards, over time.
 
-Some OFB results here
+One of the most interesting insights found was that the Ottawa Food Bank was **providing diapers for one-fifth of the two month old babies in the Rideau Vanier ward** - quite a huge impact statement!
+
+We discovered this with the aid of a quick app to allow users to zoom in on any food group, geographic area, and date range. 
+
+![](Screenshot.png)
+
+A [simplified version of this app is here](https://prabinov.shinyapps.io/GrocStore/), with fake data.
+
+Note this version is on a limited site:   
+- if nobody has used it for a while the app may be 'sleeping' and may take a while to load   
+- if the app has been used a lot, if may not load due to the maximum number of sessions. If this happens, try again later.  
+
+

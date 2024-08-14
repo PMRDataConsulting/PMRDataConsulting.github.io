@@ -1,18 +1,28 @@
 ---
 title: "PMR Data Consulting"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Specializing in extracting insights about your business
 site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
 ```
+
+Want to better understand your business via your data, but don't know where to start?
+<br>
+<br>
+We are here to help.
+<br>
+<br>
+At PMR Data Consulting, we specialize in extracting insights from your data. Our services are tailored to uncover hidden patterns to help you make better data-based business decisions.
+<br>
+<br>
+<br>
+Click [About](https://pmrdataconsulting.github.io/about.html) to find out a little more about who we are, and [Projects](https://pmrdataconsulting.github.io/projects.html) to see some of the work we've done.
+<br>
+<br>
+Then contact us at pmr.data.consulting@gmail.com to start a conversation.
+
+
 
