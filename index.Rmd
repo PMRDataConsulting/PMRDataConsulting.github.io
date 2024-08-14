@@ -10,24 +10,14 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-![Looking for insights in the data your business generates can be like looking for pearls on the beach.](pearls.JPG){width=700px, height=300px}
-
-
-
-Want to better understand your business via your data, but don't know where to start?
-<br>
-<br>
-We are here to help.
+Want to better understand your business via your data, but don't know where to start? We are here to help.
 <br>
 <br>
 At PMR Data Consulting, we specialize in extracting insights from your data. Our services are tailored to uncover hidden patterns to help you make better data-based business decisions.
 <br>
 <br>
-<br>
-Click [About](https://pmrdataconsulting.github.io/about.html) to find out a little more about who we are, and [Projects](https://pmrdataconsulting.github.io/projects.html) to see some of the work we've done.
-<br>
-<br>
-Then contact us at pmr.data.consulting@gmail.com to start a conversation.
+Click [About](https://pmrdataconsulting.github.io/about.html) to find out a little more about who we are, and [Projects](https://pmrdataconsulting.github.io/projects.html) to see some of the projects we've worked on. Then contact us at pmr.data.consulting@gmail.com to **start a conversation**.
 
+![Looking for insights in the data your business generates can be like looking for pearls on the beach.](pearls.JPG){width=700px, height=300px}
 
 

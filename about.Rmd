@@ -24,7 +24,6 @@ He teaches data science to MBA students at University of Ottawa.
 
 <center>![](peter.png){width="25%"}</center>
 
-<br>
 
 These experiences have shaped his approach to data science:
 
