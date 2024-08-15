@@ -51,3 +51,6 @@ This finding allowed the organization to focus its efforts in three areas:
 -   recapturing lapsed donors,
 
 -   preventing donors from lapsing
+
+We can also perform customer lifetime value (CLV) analyses that can help you assess the value of each customer to your business over the long term.
+

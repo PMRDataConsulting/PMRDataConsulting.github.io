@@ -16,3 +16,5 @@ Forecasts should always include an indication of the uncertainty in the predicti
 
 Forecasts can be done for any business to understand demand, costs, etc.
 
+We can also perform impact analyses that helps determine the effect of an intervention on any metric, for example the impact of an advertising campaign on sales.
+
