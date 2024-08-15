@@ -1,7 +1,7 @@
 ---
-title: "Product Demand Analysis"
+title: "Understand the Demand for Your Products"
 description: Impactful insights hidden in demand data
-date: 08-11-2024
+date: 01-01-2017
 output:
     distill::distill_article:
         self_contained: false

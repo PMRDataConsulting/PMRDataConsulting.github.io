@@ -1,26 +1,26 @@
 [
   {
     "path": "posts/DonorBase/",
-    "title": "Donor Base",
-    "description": "Analyzing the size of a donor base",
+    "title": "Understand Your Donor Base",
+    "description": "Analyzing the size of a donor base over time",
     "author": [],
-    "date": "2024-08-11",
+    "date": "2018-01-01",
     "categories": [],
     "contents": "\nIn this project, the organization was concerned about their shrinking donations.\nInitial analysis suggested that although the donations per donor were steady, that perhaps the donor base was shrinking.\nFurther analysis looked at the size of the pool of donors, and grouped them into categories of ‘new’ and ‘lapsed’.\nA plot of the cumulative number of each group confirms the suspicion.\n\n\n\nIn the early 2000’s, there were many more new donors than lapsed donors. But as we progress we find that there are fewer new donors and more lapsed donors each year. In 2015 there were more lapsed donors than new donors for the first time.\nAlthough the details of this plot depend on how ‘new donor’ and ‘lapsed donor’ are defined, changing these definitions somewhat has little effect on the conclusion: the donor pool is shrinking.\nThis finding allowed the organization to focus its efforts in three areas:\nacquiring more new donors,\nrecapturing lapsed donors,\npreventing donors from lapsing\n\n\n\n",
     "preview": "posts/DonorBase/donorbase_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2024-08-14T19:02:31-04:00",
+    "last_modified": "2024-08-15T08:48:54-04:00",
     "input_file": {}
   },
   {
     "path": "posts/OFB/",
-    "title": "Product Demand Analysis",
+    "title": "Understand the Demand for Your Products",
     "description": "Impactful insights hidden in demand data",
     "author": [],
-    "date": "2024-08-11",
+    "date": "2017-01-01",
     "categories": [],
     "contents": "\nThis project, for the Ottawa Food Bank, had the goal of understanding demand for different types of food in the different Ottawa wards, over time.\nWe built a custom app to aid with this task. One of the most interesting insights found was that the Ottawa Food Bank was providing diapers for one-fifth of the two month old babies in the Rideau Vanier ward. This statement could then be used in showing donors the huge impact they were having in the community.\n\nSimilar analyses can be done for any business to understand demand for its products.\n\n\n\n",
     "preview": {},
-    "last_modified": "2024-08-14T13:30:20-04:00",
+    "last_modified": "2024-08-15T08:49:02-04:00",
     "input_file": {}
   }
 ]

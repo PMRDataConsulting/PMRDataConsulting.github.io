@@ -1,7 +1,7 @@
 ---
-title: "Donor Base"
-description: Analyzing the size of a donor base
-date: 08-11-2024
+title: "Understand Your Donor Base"
+description: Analyzing the size of a donor base over time
+date: 01-01-2018
 output:
     distill::distill_article:
         self_contained: false
