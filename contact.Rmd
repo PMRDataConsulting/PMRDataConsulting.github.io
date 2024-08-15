@@ -1,0 +1,17 @@
+---
+title: "Contact PMR Data Consulting"
+description: |
+  Get in touch
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Email:
+[pmr.data.consulting\@gmail.com](mailto:pmr.data.consulting@gmail.com){.email}
+
+Web: <https://pmrdataconsulting.github.io/>

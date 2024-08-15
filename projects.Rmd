@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Services"
 listing: posts
 ---
 
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <br>       
         
          
-These are some examples of projects that we've conducted. They are illustrative of the range of problems we can help you with.
+These are some examples of projects that we've conducted. They are illustrative of the range of problems we can help you with, and we're always eager to expand our horizons.
 
 
 <br>

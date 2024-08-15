@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/DQ/",
+    "title": "Data Quality Assessements",
+    "description": "Is my data good enough for my purposes?",
+    "author": [],
+    "date": "2023-01-01",
+    "categories": [],
+    "contents": "\nBefore starting on any statistical analysis, it is important to know the quality of the data upon which the analysis will be based. We can perform a data quality assessment that provides overall assessments and recommendations for improving data quality.\nData quality is a continuum. The quality of a data set must be assessed with respect to its intended use, and the potential impact of any results derived from the data.\n\nAttempts to predict fastest lap times based on this data may prove difficult if the anomalies in the data are not addressed.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2024-08-15T11:24:49-04:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/Forecasting/",
+    "title": "Understand the business forecasts",
+    "description": "What does the future hold?",
+    "author": [],
+    "date": "2020-01-01",
+    "categories": [],
+    "contents": "\nForecasts of sales, costs, and cash flow are an essential tool for business planning.\nForecasts should always include an indication of the uncertainty in the predictions so that you can plan for each likely outcome. Think of forecasts as possible futures, from which you can assess different business outcomes and make decisions based on their likelihoods.\n\nForecasts can be done for any business to understand demand, costs, etc.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2024-08-15T11:02:39-04:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/DonorBase/",
     "title": "Understand Your Donor Base",
     "description": "Analyzing the size of a donor base over time",
