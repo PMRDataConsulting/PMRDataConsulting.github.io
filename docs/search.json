@@ -6,7 +6,7 @@
       "description": "Who we are and what we do\n",
       "author": [],
       "contents": "\nPeter Rabinovitch\nis the founder of PMR Data Consulting. He has extensive real world data\nscience experience with some of the largest technology companies in the\nworld, as well as the theoretical knowledge afforded by a PhD in\nProbability and Statistics. He has co-lead Data For Good\nOttawa, a group of volunteer data\nscientists who apply their expertise to solving the problems of local\ncharities. He shares his expertise with MBA students at the University\nof Ottawa, meetup groups, and colleagues.\n\n\nOur approach to data science (click the triangles to see details):\n\nAll real-world data sets contain anomalies\nIt is the job of the data scientist to ensure that anomalies are caught,\nmitigated, and most importantly, that their impact is understood by\nstakeholders before business decisions are made.\nAnomalies may be data entry errors, coding errors, or some facet of your business that you do not yet understand.\nThe important question is “what do the anomalies mean to your business’s bottom line?”\n\nUsing just one number to describe any real-world scenario is\nmisleading\nYour business is too complex to be captured by just one metric. You also\nneed to know a likely range for the metric (eg. a confidence interval),\nand how this metric interacts with other metrics.\n\nInsights must be presented in business terms, or their value\nmay be lost\nThe results must be communicated to stakeholders in the language of\ntheir business in such a way that the implications of the data science\nwork is clear, or the project may have no business impact.\nGuided by these principles, PMR Data Consulting specializes in\nhelping businesses extract the most important insights from their data.\n\n\n\n",
-      "last_modified": "2024-08-16T11:11:01-04:00"
+      "last_modified": "2024-08-16T11:18:41-04:00"
     },
     {
       "path": "contact.html",
@@ -14,7 +14,7 @@
       "description": "Get in touch\n",
       "author": [],
       "contents": "\nEmail:\npmr.data.consulting@gmail.com\nWeb: https://pmrdataconsulting.github.io/\n\n\n\n",
-      "last_modified": "2024-08-16T11:11:02-04:00"
+      "last_modified": "2024-08-16T11:18:42-04:00"
     },
     {
       "path": "index.html",
@@ -22,14 +22,14 @@
       "description": "Specializing in extracting insights about your business\n",
       "author": [],
       "contents": "\nWant to better understand your business via your data, but don’t know where to start? We are here to help.\n\nAt PMR Data Consulting, we specialize in extracting insights from your data. Our services are tailored to uncover hidden patterns to help you make better data-based business decisions.\n\nClick About to find out a little more about who we are, and Services to see how we can help you. Then contact us at pmr.data.consulting@gmail.com to start a conversation.\nLooking for insights in the data your business generates can be like looking for pearls on the beach. We can help you find them.\n\n\n",
-      "last_modified": "2024-08-16T11:11:02-04:00"
+      "last_modified": "2024-08-16T11:18:42-04:00"
     },
     {
       "path": "projects.html",
       "title": "Services",
       "author": [],
       "contents": "\n\nThese are some examples of projects that we’ve conducted. They are illustrative of the range of problems we can help you with, and we’re always eager to expand our horizons.\n\n\n\n\n",
-      "last_modified": "2024-08-16T11:11:03-04:00"
+      "last_modified": "2024-08-16T11:18:43-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

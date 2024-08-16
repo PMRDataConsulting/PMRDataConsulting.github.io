@@ -16,3 +16,4 @@ Data quality is a continuum. The quality of a data set must be assessed with res
 In the example above, we plot fastest lap times for series of races. Attempts to predict fastest lap times based on this data may prove difficult if the anomalies in the data are not addressed.
 
 
+
