@@ -33,24 +33,9 @@ It is the job of the data scientist to ensure that anomalies are caught,
 mitigated, and most importantly, that their impact is understood by
 stakeholders before business decisions are made.
 
-Anomalies may be:
+Anomalies may be data entry errors, coding errors, or some facet of your business that you do not yet understand.
 
--   Data entry errors
-
-    -   How can you modify the data entry procedure to prevent the
-        errors?
-
--   Coding errors
-
-    -   Does code need to be changed to prevent similar errors from
-        happening again?
-
--   Some facet of your business that you do not yet understand
-
-    -   What insights are the anomalies clues to?
-
-The important question is "**what do the anomalies mean to your
-business?**"
+The important question is "**what do the anomalies mean to your business's bottom line?**"
 
 </details>
 

@@ -6,9 +6,9 @@
     "author": [],
     "date": "2023-01-01",
     "categories": [],
-    "contents": "\nBefore starting on any statistical analysis, it is important to know the quality of the data upon which the analysis will be based. We can perform a data quality assessment that provides overall assessments and recommendations for improving data quality.\nData quality is a continuum. The quality of a data set must be assessed with respect to its intended use, and the potential impact of any results derived from the data.\n\nAttempts to predict fastest lap times based on this data may prove difficult if the anomalies in the data are not addressed.\n\n\n\n",
+    "contents": "\nBefore starting on any statistical analysis, it is important to know the quality of the data upon which the analysis will be based. We can perform a data quality assessment that provides overall assessments and recommendations for improving data quality.\nData quality is a continuum. The quality of a data set must be assessed with respect to its intended use, and the potential impact of any results derived from the data.\n\nIn the example above, we plot fastest lap times for series of races. Attempts to predict fastest lap times based on this data may prove difficult if the anomalies in the data are not addressed.\n\n\n\n",
     "preview": {},
-    "last_modified": "2024-08-15T11:24:49-04:00",
+    "last_modified": "2024-08-16T11:10:36-04:00",
     "input_file": {}
   },
   {
@@ -18,9 +18,9 @@
     "author": [],
     "date": "2020-01-01",
     "categories": [],
-    "contents": "\nForecasts of sales, costs, and cash flow are an essential tool for business planning.\nForecasts should always include an indication of the uncertainty in the predictions so that you can plan for each likely outcome. Think of forecasts as possible futures, from which you can assess different business outcomes and make decisions based on their likelihoods.\n\nForecasts can be done for any business to understand demand, costs, etc.\nWe can also perform impact analyses that helps determine the effect of an intervention on any metric, for example the impact of an advertising campaign on sales.\n\n\n\n",
+    "contents": "\nForecasts of sales, costs, and cash flow are essential tools for your business planning.\nForecasts should always include an indication of the uncertainty in the predictions (shown in green below) so that you can plan for each likely outcome. Think of forecasts as possible futures, from which you can assess different business outcomes and make decisions based on their likelihoods.\n\nForecasts can be done for your business to understand demand, costs, or any other metrics.\nWe can also perform impact analyses that helps determine the effect of an intervention on any metric, for example the impact of an advertising campaign on your sales.\n\n\n\n",
     "preview": {},
-    "last_modified": "2024-08-15T12:39:40-04:00",
+    "last_modified": "2024-08-16T11:10:47-04:00",
     "input_file": {}
   },
   {
@@ -32,7 +32,7 @@
     "categories": [],
     "contents": "\nIn this project, the organization was concerned about their shrinking donations.\nInitial analysis suggested that although the donations per donor were steady, that perhaps the donor base was shrinking.\nFurther analysis looked at the size of the pool of donors, and grouped them into categories of ‘new’ and ‘lapsed’.\nA plot of the cumulative number of each group confirms the suspicion.\n\n\n\nIn the early 2000’s, there were many more new donors than lapsed donors. But as we progress we find that there are fewer new donors and more lapsed donors each year. In 2015 there were more lapsed donors than new donors for the first time.\nAlthough the details of this plot depend on how ‘new donor’ and ‘lapsed donor’ are defined, changing these definitions somewhat has little effect on the conclusion: the donor pool is shrinking.\nThis finding allowed the organization to focus its efforts in three areas:\nacquiring more new donors,\nrecapturing lapsed donors,\npreventing donors from lapsing\nWe can also perform customer lifetime value (CLV) analyses that can help you assess the value of each customer to your business over the long term.\n\n\n\n",
     "preview": "posts/DonorBase/donorbase_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2024-08-15T12:38:25-04:00",
+    "last_modified": "2024-08-16T11:09:57-04:00",
     "input_file": {}
   },
   {
