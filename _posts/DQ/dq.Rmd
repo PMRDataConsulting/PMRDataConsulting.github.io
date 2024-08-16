@@ -11,7 +11,7 @@ Before starting on any statistical analysis, it is important to know  the qualit
 
 Data quality is a continuum. The quality of a data set must be assessed with respect to its intended use, and the potential impact of any results derived from the data. 
 
-![](Screenshot.png)
+![](Screenshot2.png)
 
 In the example above, we plot fastest lap times for series of races. Attempts to predict fastest lap times based on this data may prove difficult if the anomalies in the data are not addressed.
 
