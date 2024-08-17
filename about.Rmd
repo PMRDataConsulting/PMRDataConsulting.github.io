@@ -55,9 +55,9 @@ and how this metric interacts with other metrics.
 <summary>Data insights must speak the language of your business, or their value
 may be lost</summary>
 
-If they aren't expressed in terms that resonate with business objectives and decision making processes, their potential to drive meaningful action and create value may be diminished.
+If these insights aren't expressed in terms that resonate with business objectives and decision making processes, their potential to drive meaningful action and create value may be diminished.
 
 </details>
 
 Guided by these principles, **PMR Data Consulting** specializes in
-helping businesses extract the most important insights from their data.
+helping businesses, large amnd small, extract the most important insights from their data.
