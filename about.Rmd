@@ -60,4 +60,4 @@ If these insights aren't expressed in terms that resonate with business objectiv
 </details>
 
 Guided by these principles, **PMR Data Consulting** specializes in
-helping businesses, large amnd small, extract the most important insights from their data.
+helping businesses, large and small, extract the most important insights from their data.
