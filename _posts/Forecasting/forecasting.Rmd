@@ -1,5 +1,5 @@
 ---
-title: "Understand the business forecasts"
+title: "Understand the Business Forecasts"
 description: What does the future hold?
 date: 01-01-2020
 output:
@@ -16,5 +16,5 @@ Forecasts should always include an indication of the uncertainty in the predicti
 
 Forecasts can be done for your business to understand demand, costs, or any other metrics.
 
-We can also perform impact analyses that helps determine the effect of an intervention on any metric, for example the impact of an advertising campaign on your sales.
+We can also perform impact analyses that help determine the effect of an intervention on any metric, for example the impact of an advertising campaign on your sales.
 

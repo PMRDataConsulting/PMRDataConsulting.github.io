@@ -11,9 +11,8 @@ knitr::opts_chunk$set(echo = FALSE)
 <br>     
 <br>
 <br>       
-        
-         
-These are some examples of projects that we've conducted. They are illustrative of the range of problems we can help you with, and we're always eager to expand our horizons.
 
+
+If you understand your business, you can improve it. You can increase sales, find new customers, decrease costs, or know if an ad campaign worked. We can help.
 
 <br>

@@ -1,5 +1,5 @@
 ---
-title: "Data Quality Assessements"
+title: "Understand the Quality of Your Data"
 description: Is my data good enough for my purposes?
 date: 01-01-2023
 output:
