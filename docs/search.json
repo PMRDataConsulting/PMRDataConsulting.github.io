@@ -13,8 +13,8 @@
       "title": "Contact PMR Data Consulting",
       "description": "Get in touch\n",
       "author": [],
-      "contents": "\nEmail:\npmr.data.consulting@gmail.com\nWeb: https://pmrdataconsulting.github.io/\nEvery data st contains patterns. Let’s understand what yours mean.\n\n\n",
-      "last_modified": "2024-08-24T09:06:43-04:00"
+      "contents": "\nEmail:\npmr.data.consulting@gmail.com\nWeb: https://pmrdataconsulting.github.io/\nEvery data set contains patterns. Let’s understand what yours mean.\n\n\n",
+      "last_modified": "2024-08-24T10:31:15-04:00"
     },
     {
       "path": "index.html",
@@ -29,7 +29,7 @@
       "title": "Services",
       "author": [],
       "contents": "\n\nIf you understand your business, you can improve it. You can increase sales, find new customers, decrease costs, or know if an ad campaign worked. We can help.\n\n\n\n\n",
-      "last_modified": "2024-08-24T09:06:44-04:00"
+      "last_modified": "2024-08-24T09:07:27-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
