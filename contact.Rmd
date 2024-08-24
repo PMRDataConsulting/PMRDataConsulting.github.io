@@ -15,3 +15,6 @@ Email:
 [pmr.data.consulting\@gmail.com](mailto:pmr.data.consulting@gmail.com){.email}
 
 Web: <https://pmrdataconsulting.github.io/>
+
+
+![Every data st contains patterns. Let's understand what yours mean.](patterns.png){width=700px, height=300px}
