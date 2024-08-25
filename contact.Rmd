@@ -17,4 +17,4 @@ Email:
 Web: <https://pmrdataconsulting.github.io/>
 
 
-![Every data set contains patterns. Let's understand what yours mean.](patterns.png){width=700px, height=300px}
+![Every data set contains patterns. Let's understand what yours mean.](patterns.jpg){width=700px, height=300px}

@@ -21,7 +21,7 @@ scientists who apply their expertise to solve the problems of local
 charities. He shares his expertise with MBA students at the University
 of Ottawa, meetup groups, and colleagues.
 
-<center>![](peter.png){width="25%"}</center>
+<center>![](peter.jpg){width="25%"}</center>
 
 Our approach to data science (*click the triangles to see details*):
 
