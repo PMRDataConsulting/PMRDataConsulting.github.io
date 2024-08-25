@@ -18,6 +18,7 @@ At PMR Data Consulting, we specialize in extracting insights from your data. Our
 <br>
 Click [About](https://pmrdataconsulting.github.io/about.html) to find out a little more about who we are, and [Services](https://pmrdataconsulting.github.io/projects.html) to see how we can help you. Then **contact us at pmr.data.consulting@gmail.com to start a conversation**.
 
-![Looking for insights in the data your business generates can be like looking for pearls on the beach. We can help you find them.](pearls.jpg){width=700px, height=300px}
+![Looking for insights in the data your business generates can be like looking for pearls on the beach. We can help you find them.](pearl.jpg){width=700px, height=300px}
+
 
 
