@@ -1,0 +1,19 @@
+---
+title: "Understand the Quality of Your Data"
+description: Is my data good enough for my purposes?
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+Before starting on any statistical analysis, it is important to know  the quality of the data upon which the analysis will be based. We can perform a data quality assessment that provides overall assessments and recommendations for improving data quality. 
+
+Data quality is a continuum. The quality of a data set must be assessed with respect to its intended use, and the potential impact of any results derived from the data. 
+
+![](Screenshot3.png)
+
+In the example above, we plot daily unit sales figures. Attempts to predict sales based on this data may prove difficult if the anomalies in the data are not addressed.
+
+
+
+

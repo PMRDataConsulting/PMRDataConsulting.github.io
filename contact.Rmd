@@ -1,7 +1,7 @@
 ---
-title: "Contact PMR Data Consulting"
+title: "Contact Us"
 description: |
-  Get in touch
+  We're ready to help
 editor_options: 
   markdown: 
     wrap: 72

@@ -1,18 +1,22 @@
 ---
-title: "Services"
-listing: posts
+title: "Projects"
+description: |
+  How we have helped
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
- 
-  
-<br>     
-<br>
-<br>       
 
+Although the following examples are specific to each organization, the ideas are widely applicable, and adaptable to your business:
 
-If you understand your business, you can improve it. You can increase sales, find new customers, decrease costs, or know if an ad campaign worked. We can help.
+-   [Impactful insights hidden in demand data](ofb.html)
 
-<br>
+-   [Forecasts of sales, costs, and cash flow](forecasting.html)
+
+-   [Assessing your data quality](dq.html)
+
+-   [Analyzing the growth of your customer base](donorbase.html)
