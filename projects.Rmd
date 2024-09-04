@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Services"
 description: |
   How we have helped
 editor_options: 
@@ -20,3 +20,5 @@ Although the following examples are specific to each organization, the ideas are
 -   [Assessing your data quality](dq.html)
 
 -   [Analyzing the growth of your customer base](donorbase.html)
+
+They provide some examples of the services we can provide to your business.
