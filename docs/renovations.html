@@ -88,29 +88,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>PMR Data Consulting: Services</title>
+  <title>PMR Data Consulting: What's up at the coffee shop?</title>
 
-  <meta property="description" itemprop="description" content="How we have helped"/>
+  <meta property="description" itemprop="description" content="An impact analysis"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="PMR Data Consulting: Services"/>
+  <meta property="og:title" content="PMR Data Consulting: What&#39;s up at the coffee shop?"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="How we have helped"/>
+  <meta property="og:description" content="An impact analysis"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="PMR Data Consulting"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="PMR Data Consulting: Services"/>
-  <meta property="twitter:description" content="How we have helped"/>
+  <meta property="twitter:title" content="PMR Data Consulting: What&#39;s up at the coffee shop?"/>
+  <meta property="twitter:description" content="An impact analysis"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","editor_options"]}},"value":[{"type":"character","attributes":{},"value":["Services"]},{"type":"character","attributes":{},"value":["How we have helped\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["markdown"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["wrap"]}},"value":[{"type":"integer","attributes":{},"value":[72]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","editor_options"]}},"value":[{"type":"character","attributes":{},"value":["What's up at the coffee shop?"]},{"type":"character","attributes":{},"value":["An impact analysis"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["markdown"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["wrap"]}},"value":[{"type":"integer","attributes":{},"value":[72]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2438,7 +2438,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Services","description":"How we have helped","authors":[]}
+{"title":"What's up at the coffee shop?","description":"An impact analysis","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2463,24 +2463,54 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Services</h1>
+<h1>What’s up at the coffee shop?</h1>
 
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>How we have helped</p></p>
+<p>An impact analysis</p>
 </div>
 
 
 <div class="d-article">
-<p>Have a look at <a href="renovations.html">this analysis walk-through</a> to see how a competitor doing renovations on <em>their</em> shop could affect <em>your</em> sales!</p>
-<p>The following examples are specific to each organization, but the ideas are widely applicable, and adaptable to your business:</p>
-<ul>
-<li><p><a href="ofb.html">Impactful insights hidden in demand data</a></p></li>
-<li><p><a href="forecasting.html">Forecasts of sales, costs, and cash flow</a></p></li>
-<li><p><a href="dq.html">Assessing your data quality</a></p></li>
-<li><p><a href="donorbase.html">Analyzing the growth of your customer base</a></p></li>
-</ul>
-<p>They provide some examples of the services we can provide to your business.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>Imagine you run a small coffee shop, and are looking at daily sales figures for the past little while, from July 2022 through October 2023. We show the sales in the following plot.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="renovations_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
+</div>
+<p>Overall we see a slight trend upwards, but there are some spikes around March 2023. Lets zoom in to see more detail:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="renovations_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
+</div>
+<p>There is one low value in the first half of February, and then an increase in mid-March, then a sharp decline to early April, and then a continuation of the previous trend in later April.</p>
+<p>So what happened?</p>
+<p>Well a neighboring coffee shop, a competitor, shut down for renovations on February 14, and reopened March 24. Lets add those dates to the overall plot to ease interpretation.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="renovations_files/figure-html5/unnamed-chunk-4-1.png" width="624" /></p>
+</div>
+<p>What we’d like to know is:<br />
+- the impact on sales during the competitors shutdown, and<br />
+- the impact of them reopening.</p>
+<h1 id="what-happened-while-the-competitor-was-shut-down">What happened while the competitor was shut down?</h1>
+<p>In the plots above we saw an increase of sales while our competitor was shut down for renovations - can we estimate how their shutdown increased our sales?</p>
+<p>This is a bit tricky, and we can’t just compare our sales (say) the week before the shutdown to the week of the shutdown because perhaps there are some seasonal effects (eg people buy more coffee around Valentines day) that need to be accounted for.</p>
+<p>So we use a technique that, in essence, predicts what would have happened based on historical data and then compares it to what actually happened. This is illustrated in the following plot</p>
+<p>Up until our competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of money estimated as a result of their shutting down, and we see that by the end of their shutdown we have made an additional 12k or so over what we would have expected to make if they had stayed open.</p>
+<p>But do note the gray prediction intervals that show the range of likely values. So, at the end of the shutdown out best guess is that we made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that yo can assess alternate scenarios)</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="renovations_files/figure-html5/unnamed-chunk-5-1.png" width="624" /></p>
+</div>
+<h1 id="what-happened-after-they-reopened">What happened after they reopened?</h1>
+<p>We’d also like to know what happened after our competitor reopened. A similar analysis procedure yields the following plot.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="renovations_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
+</div>
+<p>In this time window it looks like we have had an overall cumulative increase in sales of about 8k by the end of the data period in mid-October. But it is also interesting in that there is an initial decline in the cumulative sales - perhaps customers (both ours, and our competitors who came to us when their regular shop was shut down) decided to give the renovated shop a try. And then our sales pick up again (perhaps people liked our coffee even better than the renovated competitor’s) until about Sept1, when we are back to what we would have expected. And (at least for the next month or so) we have sales that are larger than we would have expected.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Based on this data, and all the assumptions made in the analysis, our competitor closing for renovations increased our sales overall.</p>
+<p>We can apply the similar techniques to analyzing your data, to see the impact of sales promotions, advertising campaigns, or even the release of new products.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

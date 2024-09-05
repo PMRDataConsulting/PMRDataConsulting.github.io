@@ -1,0 +1,150 @@
+---
+title: "What's up at the coffee shop?"
+description: An impact analysis
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(CausalImpact)
+
+dft <- read_csv("coffee.csv")
+
+start_date <- dft$date %>% min()
+end_date <- dft$date %>% max()
+close_date <- make_date(2023, 2, 14)
+reopen_date <- make_date(2023, 3, 24)
+```
+
+# Introduction
+
+Imagine you run a small coffee shop, and are looking at daily sales figures for the past little while, from July 2022 through October 2023. We show the sales in the following plot.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+dft %>%
+  ggplot(aes(x = date, y = sales)) +
+  geom_point() +
+  theme_minimal() +
+  labs(x = "", y = "Sales", title = "Daily Sales") +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(0, NA))
+```
+
+Overall we see a slight trend upwards, but there are some spikes around March 2023. Lets zoom in to see more detail:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+dft %>%
+  ggplot(aes(x = date, y = sales)) +
+  geom_point() +
+  theme_minimal() +
+  labs(x = "", y = "Sales", title = "Daily Sales Zoom In") +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(0, NA), xlim = c(make_date(2023, 2, 1), make_date(2023, 5, 15)))
+```
+
+There is one low value in the first half of February, and then an increase in mid-March, then a sharp decline to early April, and then a continuation of the previous trend in later April.
+
+So what happened?
+
+Well a neighboring coffee shop, a competitor, shut down for renovations on February 14, and reopened March 24. Lets add those dates to the overall plot to ease interpretation.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+dft %>% ggplot(aes(x = date, y = sales)) +
+  geom_point() +
+  theme_minimal() +
+  labs(x = "", y = "Sales", title = "Daily Sales") +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(0, NA)) +
+  geom_vline(xintercept = make_date(2023, 2, 14), colour = "darkgreen") +
+  geom_vline(xintercept = make_date(2023, 3, 24), colour = "red") +
+  annotate(geom = "text", label = "Competitor\ncloses for\nrenovations", x = make_date(2023, 2, 11), y = 3000, colour = "darkgreen", hjust = 1) +
+  annotate(geom = "text", label = "Competitor\nreopens", x = make_date(2023, 3, 27), y = 3000, colour = "red", hjust = 0)
+```
+
+What we'd like to know is:  
+- the impact on sales during the competitors shutdown, and  
+- the impact of them reopening.  
+
+# What happened while the competitor was shut down?
+
+In the plots above we saw an increase of sales while our competitor was shut down for renovations - can we estimate how their shutdown increased our sales?
+
+This is a bit tricky, and we can't just compare our sales (say) the week before the shutdown to the week of the shutdown because perhaps there are some seasonal effects (eg people buy more coffee around Valentines day) that need to be accounted for.
+
+So we use a technique that, in essence, predicts what would have happened based on historical data and then compares it to what actually happened. This is illustrated in the following plot
+
+Up until our competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of money estimated as a result of their shutting down, and we see that by the end of their shutdown we have made an additional 12k or so over what we would have expected to make if they had stayed open.
+
+But do note the gray prediction intervals that show the range of likely values.  So, at the end of the shutdown out best guess is that we made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that yo can assess alternate scenarios)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+pre.period <- as.Date(c(start_date, close_date))
+post.period <- as.Date(c(close_date + 1, reopen_date))
+dft2 <- dft %>% select(date, sales)
+zts <- read.zoo(dft2)
+impact <- CausalImpact(zts, pre.period, post.period)
+dts <- index(impact$series) %>%
+  as_tibble() %>%
+  rename(date = value)
+idf <- impact$series %>%
+  as_tibble() %>%
+  bind_cols(dts)
+
+idf %>%
+  ggplot() +
+  geom_point(aes(x = date, y = cum.effect), colour = "black") +
+  geom_ribbon(aes(x = date, ymin = cum.effect.lower, ymax = cum.effect.upper), alpha = 0.2) +
+  geom_vline(xintercept = close_date, colour = "darkgreen") +
+  geom_vline(xintercept = reopen_date, colour = "red") +
+  theme_minimal() +
+  labs(
+    x = "Date",
+    y = "Cumulative Effect"
+  ) +
+  scale_y_continuous(labels = scales::dollar) +
+  coord_cartesian(xlim = c(start_date, reopen_date))
+```
+
+# What happened after they reopened?
+
+We'd also like to know what happened after our competitor reopened. A similar analysis procedure yields the following plot.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+pre.period <- as.Date(c(start_date, close_date))
+post.period <- as.Date(c(reopen_date, end_date))
+dft2 <- dft %>% select(date, sales)
+zts <- read.zoo(dft2)
+impact <- CausalImpact(zts, pre.period, post.period)
+dts <- index(impact$series) %>%
+  as_tibble() %>%
+  rename(date = value)
+idf <- impact$series %>%
+  as_tibble() %>%
+  bind_cols(dts)
+
+idf %>%
+  ggplot() +
+  geom_point(aes(x = date, y = cum.effect), colour = "black") +
+  geom_ribbon(aes(x = date, ymin = cum.effect.lower, ymax = cum.effect.upper), alpha = 0.2) +
+  geom_vline(xintercept = pre.period[2], colour = "darkgreen") +
+  geom_vline(xintercept = post.period[1], colour = "red") +
+  geom_vline(xintercept = make_date(2023, 9, 1), colour = "black") +
+  theme_minimal() +
+  labs(
+    x = "Date",
+    y = "Cumulative Effect"
+  ) +
+  scale_y_continuous(labels = scales::dollar)
+```
+
+
+In this time window it looks like we have had an overall cumulative increase in sales of about 8k by the end of the data period in mid-October. But it is also interesting in that there is an initial decline in the cumulative sales - perhaps customers (both ours, and our competitors who came to us when their regular shop was shut down) decided to give the renovated shop a try. And then our sales pick up again (perhaps people liked our coffee even better than the renovated competitor's) until about Sept1, when we are back to what we would have expected. And (at least for the next month or so) we have sales that are larger than we would have expected. 
+
+
+# Conclusion
+
+Based on this data, and all the assumptions made in the analysis, our competitor closing for renovations increased our sales overall.
+
+We can apply the similar techniques to analyzing your data, to see the impact of sales promotions, advertising campaigns, or even the release of new products.  

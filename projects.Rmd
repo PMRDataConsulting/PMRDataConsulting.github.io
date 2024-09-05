@@ -11,7 +11,11 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Although the following examples are specific to each organization, the ideas are widely applicable, and adaptable to your business:
+Have a look at [this analysis walk-through](renovations.html) to see how a competitor doing renovations on _their_ shop could affect _your_ sales!
+
+
+
+The following examples are specific to each organization, but the ideas are widely applicable, and adaptable to your business:
 
 -   [Impactful insights hidden in demand data](ofb.html)
 
