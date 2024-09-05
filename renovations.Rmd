@@ -20,7 +20,7 @@ reopen_date <- make_date(2023, 3, 24)
 
 # Introduction
 
-Imagine you run a small coffee shop, and are looking at daily sales figures for the past little while, from July 2022 through October 2023. We show the sales in the following plot.
+Imagine you run a small coffee shop, and are looking at daily sales figures for July 2022 through October 2023. The sales figures are shown in the following plot.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 dft %>%
@@ -48,7 +48,7 @@ There is one low value in the first half of February, and then an increase in mi
 
 So what happened?
 
-Well a neighboring coffee shop, a competitor, shut down for renovations on February 14, and reopened March 24. Lets add those dates to the overall plot to ease interpretation.
+A neighboring coffee shop, a competitor, shut down for renovations on February 14, and reopened March 24. Lets indicate those dates on the overall plot so we can see what changed.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 dft %>% ggplot(aes(x = date, y = sales)) +
@@ -75,9 +75,9 @@ This is a bit tricky, and we can't just compare our sales (say) the week before 
 
 So we use a technique that, in essence, predicts what would have happened based on historical data and then compares it to what actually happened. This is illustrated in the following plot
 
-Up until our competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of money estimated as a result of their shutting down, and we see that by the end of their shutdown we have made an additional 12k or so over what we would have expected to make if they had stayed open.
+Up until our competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of sales estimated as a result of their shutting down, and we see that by the end of their shutdown we have made an additional 12k or so over what we would have expected to make if they had stayed open.
 
-But do note the gray prediction intervals that show the range of likely values.  So, at the end of the shutdown out best guess is that we made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that yo can assess alternate scenarios)
+The gray prediction intervals show the range of likely values.  At the end of the shutdown out best guess is that we made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that you can assess alternate scenarios)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 pre.period <- as.Date(c(start_date, close_date))
@@ -140,7 +140,7 @@ idf %>%
 ```
 
 
-In this time window it looks like we have had an overall cumulative increase in sales of about 8k by the end of the data period in mid-October. But it is also interesting in that there is an initial decline in the cumulative sales - perhaps customers (both ours, and our competitors who came to us when their regular shop was shut down) decided to give the renovated shop a try. And then our sales pick up again (perhaps people liked our coffee even better than the renovated competitor's) until about Sept1, when we are back to what we would have expected. And (at least for the next month or so) we have sales that are larger than we would have expected. 
+In this time window it looks like we have had an overall cumulative increase in sales of about 8k by the end of the data period in mid-October. But it is also interesting in that there is an initial decline in the cumulative sales - perhaps customers (both ours, and our competitors who came to us when their regular shop was shut down) decided to give the renovated shop a try. And then our sales pick up again (perhaps people liked our coffee even better than the renovated competitor's) until about Sept 1, when we are back to what we would have expected. And (at least for the next month or so) we have sales that are larger than we would have expected. 
 
 
 # Conclusion
