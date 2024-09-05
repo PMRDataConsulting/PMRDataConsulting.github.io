@@ -11,11 +11,19 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Have a look at [this analysis walk-through](renovations.html) to see how a competitor doing renovations on _their_ shop could affect _your_ sales!
+## Detailed Studies
 
+Here we go into some detail about things we have worked on, and how they
+may apply to your business.
 
+-   Have a look at [this analysis walk-through](renovations.html) to see
+    how a competitor doing renovations on *their* shop could affect
+    *your* sales!
 
-The following examples are specific to each organization, but the ideas are widely applicable, and adaptable to your business:
+## Quick Examples
+
+The following examples are specific to each organization, but the ideas
+are widely applicable, and adaptable to your business.
 
 -   [Impactful insights hidden in demand data](ofb.html)
 
@@ -25,4 +33,4 @@ The following examples are specific to each organization, but the ideas are wide
 
 -   [Analyzing the growth of your customer base](donorbase.html)
 
-They provide some examples of the services we can provide to your business.
+We can help you with similar analyses.
