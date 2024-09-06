@@ -1,5 +1,5 @@
 ---
-title: "Understand Your Donor Base"
+title: "Is your customer base growing?"
 description: Analyzing the size of a donor base over time
 editor_options: 
   markdown: 
