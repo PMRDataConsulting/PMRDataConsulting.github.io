@@ -35,7 +35,7 @@ stakeholders before business decisions are made.
 
 Anomalies may be data entry errors, coding errors, or some facet of your business that you do not yet understand.
 
-The important question is "**what do the anomalies mean to your business's bottom line?**"
+The important question is "**what do the anomalies mean to your business' bottom line?**"
 
 </details>
 
