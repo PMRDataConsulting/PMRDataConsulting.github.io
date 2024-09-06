@@ -1,7 +1,7 @@
 ---
 title: "Services"
 description: |
-  What we do
+  Examples of how we can help
 editor_options: 
   markdown: 
     wrap: 72
@@ -15,11 +15,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Analysis of some common business problems in depth, and how they may apply to your business.
 
--   Have a look at [this analysis walk-through](renovations.html) to see
-    how a competitor doing renovations on *their* shop could affect
-    *your* sales!
+-   External factors can affect your business, and it is important to know how. [Here](renovations.html) we show how a competitor doing renovations on *their* shop could affect
+    *your* sales!  
 
-_More to come_
+-   Are you growing your customer base? [Here](donorbase.html) we show an example where the customer base was growing, but is now shrinking.  
 
 ## Quick Examples
 
@@ -32,7 +31,6 @@ are widely applicable and adaptable to your business.
 
 -   [Assessing your data quality](dq.html)
 
--   [Analyzing the growth of your customer base](donorbase.html)
 
 We can help you with similar analyses.
 
