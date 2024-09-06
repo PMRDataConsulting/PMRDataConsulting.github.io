@@ -1,0 +1,203 @@
+---
+title: "Am I going to run out of money?"
+description: A cash management analysis
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(fable)
+library(fable.prophet)
+library(tsibble)
+```
+
+# Introduction
+
+Imagine you run a small coffee shop, and are looking at sales figures and expenses and worrying that you may run low on cash in the next 12 weeks.
+
+```{r, echo=FALSE, warning=FALSE,message=FALSE}
+dft <- read_csv("fc.csv")
+
+dft_ts <- dft %>%
+  mutate(wy = yearweek(date)) %>%
+  summarize(sales = sum(sales), .by = wy) %>%
+  as_tsibble() %>%
+  slice(-1) %>%
+  slice_head(n = -1)
+
+df_train <- dft_ts %>% slice_head(n = -12)
+```
+
+Here is a plot of your sales by week for the past year.
+
+```{r, echo=FALSE, warning=FALSE,message=FALSE}
+df_train %>%
+  ggplot(aes(x = wy, y = sales)) +
+  geom_point() +
+  theme_minimal() +
+  labs(x = "", y = "Sales") +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(0, NA))
+```
+
+
+Your expenses are somewhat spikey, as utilities, rent and labour come at regular intervals, but we'll assume that materials expenses come more or less continuously and are related to sales: if you sell more your raw materials costs are more. So we can only figure out your expenses once we know how much you will sell.
+
+So, we need to forecast your sales for the next 12 weeks.
+
+```{r, echo=FALSE, warning=FALSE,message=FALSE}
+df_fit <- df_train |>
+  model(
+    prophet = prophet(sales)
+  )
+
+df_fc <- df_fit |>
+  forecast(h = 12) %>%
+  hilo() %>%
+  mutate(ll95 = `95%`$lower, ul95 = `95%`$upper, ll80 = `80%`$lower, ul80 = `80%`$upper)
+
+ggplot() +
+  geom_point(data = df_train, aes(x = wy, y = sales)) +
+  geom_line(data = df_fc, aes(x = wy, y = .mean)) +
+  geom_ribbon(data = df_fc, aes(x = wy, ymin = ll80, ymax = ul80), alpha = 0.2) +
+  labs(
+    y = "Sales",
+    x = ""
+  ) +
+  theme_minimal() +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(0, NA))
+```
+
+The black points are your historical sales. The solid black line is the (average) forecast, and the gray 'ribbon' bounds the likely range of sales for the forecast.
+
+Lets first look at expenses under the assumption of the average forecast.
+
+```{r, echo=FALSE, warning=FALSE,message=FALSE}
+yw <- yearweek("2023 W30")
+dfcf <- bind_rows(
+  df_fc %>% select(wy, pred = .mean, ll95, ul95, ll80, ul80) %>% filter(wy >= yw) %>% pivot_longer(names_to = "type", values_to = "val", cols = -wy),
+  dft_ts %>% select(wy, val = sales) %>% filter(wy >= yw) %>% mutate(type = "actual")
+)
+
+m_rent <- 5000
+m_utilities <- 2000
+bw_labour <- 4500
+dm_materials <- 0.7
+ds_materials <- 0.3
+
+set.seed(2024)
+
+dfe <- dft %>%
+  filter(date >= as.Date(yw)) %>%
+  mutate(
+    materials = pmax(0, round(rnorm(nrow(.), dm_materials * sales, ds_materials * sales))),
+    rent = if_else(day(date) == 1, m_rent, 0),
+    labour = if_else(day(date) == 1 | day(date) == 15, bw_labour, 0),
+    utilities = if_else(day(date) == 1, m_utilities, 0),
+    expenses = materials + rent + labour + utilities
+  ) %>%
+  mutate(wy = yearweek(date)) %>%
+  summarize(
+    materials = sum(materials),
+    rent = sum(rent),
+    labour = sum(labour),
+    utilities = sum(utilities),
+    expenses = sum(expenses),
+    .by = wy
+  ) %>%
+  filter(
+    wy >= min(dfcf$wy),
+    wy <= max(dfcf$wy)
+  )
+
+dfe %>%
+  pivot_longer(names_to = "varn", values_to = "val", cols = -wy) %>%
+  filter(varn != "expenses") %>%
+  ggplot(aes(x = wy, y = val, fill = varn)) +
+  geom_bar(stat = "identity") +
+  labs(
+    y = "Expenses",
+    x = "",
+    fill = ""
+  ) +
+  theme_minimal() +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(0, NA)) +
+  ggthemes::scale_fill_colorblind() +
+  theme(legend.position = "bottom")
+```
+
+Let plot them both
+
+```{r, echo=FALSE, warning=FALSE,message=FALSE}
+bind_rows(
+  dfe %>% select(wy, expenses) %>% rename(value = expenses) %>% mutate(type = "expenses"),
+  dfcf %>% filter(type == "pred") %>% rename(value = val) %>% mutate(type = "sales")
+) %>%
+  ggplot(aes(x = wy, y = value, colour = type)) +
+  geom_line() +
+  labs(
+    y = "",
+    x = "",
+    colour = ""
+  ) +
+  theme_minimal() +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(0, NA)) +
+  theme(legend.position = "bottom") +
+  ggthemes::scale_color_colorblind()
+```
+
+You'd want to know if the spikes in expenses are covered by the steadier sales, so let look at the cumulative difference - in other words if yous tarted with a bank balance of zero, what would your bank balance look like?
+
+```{r, echo=FALSE, warning=FALSE,message=FALSE}
+bind_rows(
+  dfe %>% select(wy, expenses) %>% rename(value = expenses) %>% mutate(type = "expenses"),
+  dfcf %>% filter(type == "pred") %>% rename(value = val) %>% mutate(type = "sales")
+) %>%
+  pivot_wider(names_from = type, values_from = value) %>%
+  mutate(net = sales - expenses) %>%
+  arrange(wy) %>%
+  mutate(cs = cumsum(net)) %>%
+  ggplot(aes(x = wy, y = cs)) +
+  geom_line() +
+  labs(
+    y = "",
+    x = ""
+  ) +
+  theme_minimal() +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(0, NA))
+```
+
+This shows that your sales would more than cover your expenses.
+
+But, recall that this is based on a sales forecast, and forecasts are probabilistic statements, not certainty. So lets repeat the above, but now assuming the most pessimistic of sales forecasts
+
+```{r, echo=FALSE, warning=FALSE,message=FALSE}
+bind_rows(
+  dfe %>% select(wy, expenses) %>% rename(value = expenses) %>% mutate(type = "expenses"),
+  dfcf %>% filter(type == "ll95") %>% rename(value = val) %>% mutate(type = "sales")
+) %>%
+  pivot_wider(names_from = type, values_from = value) %>%
+  mutate(net = sales - expenses) %>%
+  arrange(wy) %>%
+  mutate(cs = cumsum(net)) %>%
+  ggplot(aes(x = wy, y = cs)) +
+  geom_line() +
+  labs(
+    y = "",
+    x = ""
+  ) +
+  theme_minimal() +
+  scale_y_continuous(label = scales::dollar) +
+  coord_cartesian(ylim = c(-10000, NA))
+```
+
+Here we see that we'd be in trouble by week 9. If we started off with a bank balance of 10k, we'd be fine, but if it is less than that we'd need to arrange to pay some expenses later, or collect on our sales sooner, or failing that access a line of credit.
+
+Cash management is  a critical component of any business, and being able to predict your sales and expenses can allow you to avoid the worst.
+
