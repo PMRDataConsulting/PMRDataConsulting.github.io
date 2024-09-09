@@ -18,7 +18,7 @@ close_date <- make_date(2023, 2, 14)
 reopen_date <- make_date(2023, 3, 24)
 ```
 
-# Introduction
+# Challenge
 
 Imagine you run a small coffee shop, and are looking at daily sales figures for July 2022 through October 2023. The sales figures are shown in the following plot.
 
@@ -48,6 +48,8 @@ There is one low value in the first half of February, and then an increase in mi
 
 So what happened?
 
+# Approach
+
 A neighboring coffee shop, a competitor, shut down for renovations on February 14, and reopened March 24. Lets indicate those dates on the overall plot so we can see what changed.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -67,7 +69,7 @@ What we'd like to know is:
 - the impact on sales during the competitors shutdown, and  
 - the impact of them reopening.  
 
-# What happened while the competitor was shut down?
+## What happened while the competitor was shut down?
 
 In the plots above we saw an increase of sales while our competitor was shut down for renovations - can we estimate how their shutdown increased our sales?
 
@@ -107,7 +109,7 @@ idf %>%
   coord_cartesian(xlim = c(start_date, reopen_date))
 ```
 
-# What happened after they reopened?
+## What happened after they reopened?
 
 We'd also like to know what happened after our competitor reopened. A similar analysis procedure yields the following plot.
 
@@ -142,9 +144,8 @@ idf %>%
 
 In this time window it looks like we have had an overall cumulative increase in sales of about 8k by the end of the data period in mid-October. But it is also interesting in that there is an initial decline in the cumulative sales - perhaps customers (both ours, and our competitors who came to us when their regular shop was shut down) decided to give the renovated shop a try. And then our sales pick up again (perhaps people liked our coffee even better than the renovated competitor's) until about Sept 1, when we are back to what we would have expected. And (at least for the next month or so) we have sales that are larger than we would have expected. 
 
-
-# Conclusion
-
 Based on this data, and all the assumptions made in the analysis, our competitor closing for renovations increased our sales overall.
 
-We can apply the similar techniques to analyzing your data, to see the impact of sales promotions, advertising campaigns, or even the release of new products.  
+# Outcomes
+
+We analyzed our sales data in order to understand the impact of an external event. Similar techniques can be applied to your business, to estimate the impact of sales promotions, advertising campaigns, or even the release of new products on your profits.  
