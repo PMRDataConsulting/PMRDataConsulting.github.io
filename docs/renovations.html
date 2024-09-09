@@ -2476,7 +2476,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </div>
 <h1 id="challenge">Challenge</h1>
-<p>Imagine you run a small coffee shop, and are looking at daily sales figures for July 2022 through October 2023. The sales figures are shown in the following plot.</p>
+<p>Imagine you run a small coffee shop, and are looking at daily sales figures for July 2022 through October 2023. The sales figures are shown in the following plot. The challenge is to estimate what changed your sales?</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="renovations_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
 </div>
@@ -2487,6 +2487,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>There is one low value in the first half of February, and then an increase in mid-March, then a sharp decline to early April, and then a continuation of the previous trend in later April.</p>
 <p>So what happened?</p>
 <h1 id="approach">Approach</h1>
+<p>We looked at the sales figures by day, as well as what was going in the coffee shop’s immediate environment.</p>
 <p>A neighboring coffee shop, a competitor, shut down for renovations on February 14, and reopened March 24. Lets indicate those dates on the overall plot so we can see what changed.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="renovations_files/figure-html5/unnamed-chunk-4-1.png" width="624" /></p>
@@ -2511,7 +2512,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>In this time window it looks like we have had an overall cumulative increase in sales of about 8k by the end of the data period in mid-October. But it is also interesting in that there is an initial decline in the cumulative sales - perhaps customers (both ours, and our competitors who came to us when their regular shop was shut down) decided to give the renovated shop a try. And then our sales pick up again (perhaps people liked our coffee even better than the renovated competitor’s) until about Sept 1, when we are back to what we would have expected. And (at least for the next month or so) we have sales that are larger than we would have expected.</p>
 <p>Based on this data, and all the assumptions made in the analysis, our competitor closing for renovations increased our sales overall.</p>
 <h1 id="outcomes">Outcomes</h1>
-<p>We analyzed our sales data in order to understand the impact of an external event. Similar techniques can be applied to your business, to estimate the impact of sales promotions, advertising campaigns, or even the release of new products on your profits.</p>
+<p>Analyzing the sales data in order to understand the impact of an event helped the coffee shop determine the impact of an event on their sales. Similar techniques can be applied to your business, to estimate the impact of sales promotions, advertising campaigns, or even the release of new products on your profits.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

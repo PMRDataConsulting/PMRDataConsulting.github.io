@@ -20,7 +20,7 @@ reopen_date <- make_date(2023, 3, 24)
 
 # Challenge
 
-Imagine you run a small coffee shop, and are looking at daily sales figures for July 2022 through October 2023. The sales figures are shown in the following plot.
+Imagine you run a small coffee shop, and are looking at daily sales figures for July 2022 through October 2023. The sales figures are shown in the following plot. The challenge is to estimate what changed your sales?
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 dft %>%
@@ -49,6 +49,8 @@ There is one low value in the first half of February, and then an increase in mi
 So what happened?
 
 # Approach
+
+We looked at the sales figures by day, as well as what was going in the coffee shop's immediate environment.
 
 A neighboring coffee shop, a competitor, shut down for renovations on February 14, and reopened March 24. Lets indicate those dates on the overall plot so we can see what changed.
 
@@ -148,4 +150,4 @@ Based on this data, and all the assumptions made in the analysis, our competitor
 
 # Outcomes
 
-We analyzed our sales data in order to understand the impact of an external event. Similar techniques can be applied to your business, to estimate the impact of sales promotions, advertising campaigns, or even the release of new products on your profits.  
+Analyzing the sales data in order to understand the impact of an event helped the coffee shop determine the impact of an event on their sales. Similar techniques can be applied to your business, to estimate the impact of sales promotions, advertising campaigns, or even the release of new products on your profits.  
