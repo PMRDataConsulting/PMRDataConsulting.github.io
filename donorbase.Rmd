@@ -6,9 +6,14 @@ editor_options:
     wrap: 72
 ---
 
-In this project, the organization was concerned about their shrinking donations.\
+# Challenge
+
+This organization was concerned about their shrinking donations.\
 Initial analysis suggested that although the donations per donor were steady, that perhaps the donor base was shrinking.\
-Further analysis looked at the size of the pool of donors, and grouped them into categories of 'new' and 'lapsed'.\
+
+# Approach
+
+We looked at the size of the pool of donors, and grouped them into categories of 'new' and 'lapsed'.\
 A plot of the cumulative number of each group confirms the suspicion.
 
 ```{r, echo=FALSE}
@@ -43,7 +48,11 @@ In the early 2000's, there were many more new donors than lapsed donors. But as 
 
 Although the details of this plot depend on how 'new donor' and 'lapsed donor' are defined, changing these definitions somewhat has little effect on the conclusion: the donor pool is shrinking.
 
-This finding allowed the organization to focus its efforts in three areas:
+
+
+# Outcomes
+
+This finding allowed the organization to focus its efforts on finding strategies to improve in three areas:
 
 -   acquiring more new donors,
 
@@ -51,5 +60,5 @@ This finding allowed the organization to focus its efforts in three areas:
 
 -   preventing donors from lapsing
 
-We can also perform customer lifetime value (CLV) analyses that can help you assess the value of each customer to your business over the long term.
+We can also perform a customer lifetime value (CLV) analysis that can help you assess the value of each customer to your business over the long term, or a churn analysis that looks at how customers behaviour evolves over time, providing you the information you'll need to adapt your strategy to their needs.
 
