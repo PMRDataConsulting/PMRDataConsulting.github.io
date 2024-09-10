@@ -11,19 +11,10 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Detailed Examples
-
-Detailed examples of some common business problems and how data science can help you understand their implications.
-
 -   [What's up at the coffee shop?](renovations.html) It is important to know how external factors can affect your business. We show how a competitor doing renovations on *their* shop could affect
     *your* sales!  
 
 -   [Is your customer base growing?](donorbase.html) Analyzing your customer base can help you decide whether to focus on preventing customer churn, recapturing former customers, or acquiring new customers.
-
-## Quick Examples
-
-The following shorter examples are specific to each organization, but the ideas
-are widely applicable and adaptable to your business.
 
 -   [Impactful insights hidden in demand data](ofb.html)
 
