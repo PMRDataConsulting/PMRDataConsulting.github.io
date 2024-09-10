@@ -79,7 +79,7 @@ This is a bit tricky, and we can't just compare sales the week (or any other tim
 
 So we use a technique that, in essence, predicts what would have happened based on historical data and then compares it to what actually happened. This is illustrated in the following plot
 
-Up until the competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of sales estimated as a result of their shutting down, and we see that by the end of their shutdown the coffee shop has have made an additional 12k or so over what we would have expected to make if the competitor had stayed open.
+Up until the competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of sales estimated as a result of their shutting down, and we see that by the end of their shutdown the coffee shop has made an additional 12k or so over what would have been expected if the competitor had stayed open.
 
 The prediction intervals (in gray) show the range of likely values.  At the end of the shutdown our best single estimate is that the coffee shop made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that you can assess alternate scenarios)
 
@@ -148,11 +148,11 @@ idf %>%
 
 In this time window it looks like there was an overall cumulative increase in sales of approximately 8k by the end of the data period in mid-October. 
 
-It is also interesting in that there is an initial decline in the cumulative sales. Perhaps customers from both shops decided to give the renovated shop a try. 
+It is interesting in that there is an initial decline in the cumulative sales. Perhaps customers from both shops decided to give the renovated shop a try. 
 
 Then the sales pick up again: the shop's customers returned, along with newly acquired customers from the competitor.
 
-On Sept 1, the sales are back to what would have been expected, and then they increase due to the newly acquired customers.
+By Sept 1st the sales are back to what would have been expected, and then they increase due to the newly acquired customers.
 
 Based on this data, and all the assumptions made in the analysis, the competitor closing for renovations increased overall sales.
 
@@ -160,4 +160,4 @@ Based on this data, and all the assumptions made in the analysis, the competitor
 
 Analyzing the sales data helped the coffee shop understand the impact of an external event on their sales, allowing them to better estimate future sales and plan accordingly.
 
-Similar techniques can be applied to your business, to estimate the impact of sales promotions, advertising campaigns, or even the release of new products on your profits.  
+Similar techniques can be applied to your business to estimate the impact of sales promotions, advertising campaigns, or even the release of new products on your profits.  
