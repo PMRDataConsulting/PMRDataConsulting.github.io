@@ -50,13 +50,7 @@ In the early 2000's, there were many more new donors than lapsed donors. But as 
 
 # Outcomes
 
-This important finding allowed the organization to focus its efforts on finding strategies to improve in three areas:
+The important insight that the donor pool was shrinking allowed the organization to focus its efforts on finding strategies to improve in three areas: acquiring more new donors, recapturing lapsed donors, and preventing donors from lapsing.
 
--   acquiring more new donors,
-
--   recapturing lapsed donors,
-
--   preventing donors from lapsing
-
-We can also perform a customer lifetime value (CLV) analysis that can help you assess the value of each customer to your business over the long term, or a churn analysis that looks at how customers' behaviour evolves over time, providing you the information you'll need to adapt your strategy to their needs.
+Similar techniques can be applied to your business to provide you with the information you'll need to adapt your strategy to your customers' behaviours. We can perform a customer lifetime value (CLV) analysis that can help you assess the value of each customer to your business over the long term, or a churn analysis that looks at how customers' behaviour evolves over time. 
 
