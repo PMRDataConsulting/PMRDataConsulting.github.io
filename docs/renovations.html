@@ -2484,7 +2484,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="renovations_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
 </div>
-<p>There is one low value in the first half of February, and then an increase in mid-March, then a sharp decline to early April, and then a continuation of the previous trend in later April.</p>
+<p>There is one low value in the first half of February, and then an increase in mid-March, then a sharp decline in early April, and then a continuation of the previous trend in later April.</p>
 <p>So what happened?</p>
 <h1 id="approach">Approach</h1>
 <p>We looked at the sales figures by day, as well as what was going on in the coffee shop’s immediate environment.</p>
@@ -2493,24 +2493,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="renovations_files/figure-html5/unnamed-chunk-4-1.png" width="624" /></p>
 </div>
 <p>What we’d like to know is:<br />
-- the impact on sales during the competitors shutdown, and<br />
-- the impact of them reopening.</p>
+- the impact on sales during the competitor’s shutdown, and<br />
+- the impact on sales of them reopening.</p>
 <h2 id="what-happened-while-the-competitor-was-shut-down">What happened while the competitor was shut down?</h2>
 <p>In the plots above we saw an increase of sales while the competitor was shut down for renovations - can we estimate how their shutdown increased sales?</p>
-<p>This is a bit tricky, and we can’t just compare sales (say) the week before the shutdown to the week of the shutdown because perhaps there are some seasonal effects (eg people buy more coffee around Valentines day) that need to be accounted for.</p>
+<p>This is a bit tricky, and we can’t just compare sales the week (or any other time window) before the shutdown to the week of the shutdown because perhaps there are some seasonal effects (eg people buy more coffee around Valentines day) that need to be accounted for.</p>
 <p>So we use a technique that, in essence, predicts what would have happened based on historical data and then compares it to what actually happened. This is illustrated in the following plot</p>
 <p>Up until the competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of sales estimated as a result of their shutting down, and we see that by the end of their shutdown the coffee shop has have made an additional 12k or so over what we would have expected to make if the competitor had stayed open.</p>
-<p>The prediction intervals (in gray) show the range of likely values. At the end of the shutdown our best single estimate is that we made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that you can assess alternate scenarios)</p>
+<p>The prediction intervals (in gray) show the range of likely values. At the end of the shutdown our best single estimate is that the coffee shop made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that you can assess alternate scenarios)</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="renovations_files/figure-html5/unnamed-chunk-5-1.png" width="624" /></p>
 </div>
-<p>In summary, while the competitor shut down the coffee shop made more money than would have been expected otherwise.</p>
+<p>In summary, during the period the competitor shut down, the coffee shop made more money than would have been expected otherwise.</p>
 <h2 id="what-happened-after-they-reopened">What happened after they reopened?</h2>
 <p>We’d also like to know what happened after the competitor reopened. A similar analysis procedure yields the following plot.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="renovations_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
 </div>
-<p>In this time window it looks like there was an overall cumulative increase in sales of approximately 8k by the end of the data period in mid-October. But it is also interesting in that there is an initial decline in the cumulative sales - perhaps customers (both the coffee shop’s, and the competitor’s who came to us when their regular shop was shut down) decided to give the renovated shop a try. And then the sales pick up again (perhaps people liked the coffee shop’s coffee even better than the renovated competitor’s) until about Sept 1, when the sales are back to what would have expected. And (at least for the next month or so) the sales are larger than would have been expected.</p>
+<p>In this time window it looks like there was an overall cumulative increase in sales of approximately 8k by the end of the data period in mid-October.</p>
+<p>It is also interesting in that there is an initial decline in the cumulative sales. Perhaps customers from both shops decided to give the renovated shop a try.</p>
+<p>Then the sales pick up again: the shop’s customers returned, along with newly acquired customers from the competitor.</p>
+<p>On Sept 1, the sales are back to what would have been expected, and then they increase due to the newly acquired customers.</p>
 <p>Based on this data, and all the assumptions made in the analysis, the competitor closing for renovations increased overall sales.</p>
 <h1 id="outcomes">Outcomes</h1>
 <p>Analyzing the sales data helped the coffee shop understand the impact of an external event on their sales, allowing them to better estimate future sales and plan accordingly.</p>

@@ -44,7 +44,7 @@ dft %>%
   coord_cartesian(ylim = c(0, NA), xlim = c(make_date(2023, 2, 1), make_date(2023, 5, 15)))
 ```
 
-There is one low value in the first half of February, and then an increase in mid-March, then a sharp decline to early April, and then a continuation of the previous trend in later April.
+There is one low value in the first half of February, and then an increase in mid-March, then a sharp decline in early April, and then a continuation of the previous trend in later April.
 
 So what happened?
 
@@ -68,20 +68,20 @@ dft %>% ggplot(aes(x = date, y = sales)) +
 ```
 
 What we'd like to know is:  
-- the impact on sales during the competitors shutdown, and  
-- the impact of them reopening.  
+- the impact on sales during the competitor's shutdown, and  
+- the impact on sales of them reopening.  
 
 ## What happened while the competitor was shut down?
 
 In the plots above we saw an increase of sales while the competitor was shut down for renovations - can we estimate how their shutdown increased sales?
 
-This is a bit tricky, and we can't just compare sales (say) the week before the shutdown to the week of the shutdown because perhaps there are some seasonal effects (eg people buy more coffee around Valentines day) that need to be accounted for.
+This is a bit tricky, and we can't just compare sales the week (or any other time window) before the shutdown to the week of the shutdown because perhaps there are some seasonal effects (eg people buy more coffee around Valentines day) that need to be accounted for.
 
 So we use a technique that, in essence, predicts what would have happened based on historical data and then compares it to what actually happened. This is illustrated in the following plot
 
 Up until the competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of sales estimated as a result of their shutting down, and we see that by the end of their shutdown the coffee shop has have made an additional 12k or so over what we would have expected to make if the competitor had stayed open.
 
-The prediction intervals (in gray) show the range of likely values.  At the end of the shutdown our best single estimate is that we made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that you can assess alternate scenarios)
+The prediction intervals (in gray) show the range of likely values.  At the end of the shutdown our best single estimate is that the coffee shop made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that you can assess alternate scenarios)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 pre.period <- as.Date(c(start_date, close_date))
@@ -111,7 +111,7 @@ idf %>%
   coord_cartesian(xlim = c(start_date, reopen_date))
 ```
 
-In summary, while the competitor shut down the coffee shop made more money than would have been expected otherwise.
+In summary, during the period the competitor shut down, the coffee shop made more money than would have been expected otherwise.
 
 ## What happened after they reopened?
 
@@ -146,7 +146,13 @@ idf %>%
 ```
 
 
-In this time window it looks like there was an overall cumulative increase in sales of approximately 8k by the end of the data period in mid-October. But it is also interesting in that there is an initial decline in the cumulative sales - perhaps customers (both the coffee shop's, and the competitor's who came to us when their regular shop was shut down) decided to give the renovated shop a try. And then the sales pick up again (perhaps people liked the coffee shop's coffee even better than the renovated competitor's) until about Sept 1, when the sales are back to what would have expected. And (at least for the next month or so) the sales are larger than would have been expected. 
+In this time window it looks like there was an overall cumulative increase in sales of approximately 8k by the end of the data period in mid-October. 
+
+It is also interesting in that there is an initial decline in the cumulative sales. Perhaps customers from both shops decided to give the renovated shop a try. 
+
+Then the sales pick up again: the shop's customers returned, along with newly acquired customers from the competitor.
+
+On Sept 1, the sales are back to what would have been expected, and then they increase due to the newly acquired customers.
 
 Based on this data, and all the assumptions made in the analysis, the competitor closing for renovations increased overall sales.
 
