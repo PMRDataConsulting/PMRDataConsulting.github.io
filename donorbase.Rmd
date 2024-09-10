@@ -13,7 +13,7 @@ Initial analysis suggested that although the donations per donor were steady, th
 
 # Approach
 
-We looked at the size of the pool of donors, and grouped them into categories of 'new' and 'lapsed'. (Note the definitions of _new_ and _lapsed- were varied with little effect on the results.) \
+We looked at the size of the pool of donors, and grouped them into categories of _new_ and _lapsed_. (Note the definitions of _new_ and _lapsed_ were varied with little effect on the results.) \
 
 A plot of the cumulative number of each group confirms the suspicion.
 
@@ -58,5 +58,5 @@ This important finding allowed the organization to focus its efforts on finding 
 
 -   preventing donors from lapsing
 
-We can also perform a customer lifetime value (CLV) analysis that can help you assess the value of each customer to your business over the long term, or a churn analysis that looks at how customers behaviour evolves over time, providing you the information you'll need to adapt your strategy to their needs.
+We can also perform a customer lifetime value (CLV) analysis that can help you assess the value of each customer to your business over the long term, or a churn analysis that looks at how customers' behaviour evolves over time, providing you the information you'll need to adapt your strategy to their needs.
 

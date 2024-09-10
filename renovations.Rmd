@@ -79,7 +79,7 @@ This is a bit tricky, and we can't just compare sales (say) the week before the 
 
 So we use a technique that, in essence, predicts what would have happened based on historical data and then compares it to what actually happened. This is illustrated in the following plot
 
-Up until the competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of sales estimated as a result of their shutting down, and we see that by the end of their shutdown the coffee shop has have made an additional 12k or so over what we would have expected to make if they had stayed open.
+Up until the competitor shut down, the difference between what we predict and what actually happened is zero. But then we see a change after the competitor shuts down. We show the cumulative effect, i.e. the total amount of sales estimated as a result of their shutting down, and we see that by the end of their shutdown the coffee shop has have made an additional 12k or so over what we would have expected to make if the competitor had stayed open.
 
 The prediction intervals (in gray) show the range of likely values.  At the end of the shutdown our best single estimate is that we made an additional 12k, but that could actually be anywhere between 8k and 15k. (All good statistical results will provide a range of values, not just a single figure, so that you can assess alternate scenarios)
 
@@ -152,6 +152,6 @@ Based on this data, and all the assumptions made in the analysis, the competitor
 
 # Outcomes
 
-Analyzing the sales data helped the coffee shop understand the impact of an external event on their sales, allowing them to better estimate future sales.
+Analyzing the sales data helped the coffee shop understand the impact of an external event on their sales, allowing them to better estimate future sales and plan accordingly.
 
 Similar techniques can be applied to your business, to estimate the impact of sales promotions, advertising campaigns, or even the release of new products on your profits.  
