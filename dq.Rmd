@@ -12,10 +12,11 @@ We've tackled many complex data challenges in the past. For instance, we uncover
 
 <br>
 
-In the example below, we plot daily unit sales figures. Attempts to predict sales based on this data may prove difficult if the anomalies in the data are not addressed.
-<br>
-<br>
-![](Screenshot3.png)
+
+
+![Attempts to predict daily sales based on this data may prove difficult if the anomalies in the data are not addressed](Screenshot3.png)
+
+
 
 
 
