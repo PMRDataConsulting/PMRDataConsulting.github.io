@@ -11,6 +11,8 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+-   [Assessing your data quality](dq.html) Can your data answer your business needs? We can perform a data quality assessment that provides overall assessments and recommendations for improving data quality to ensure that it can. 
+
 -   [What's up at the coffee shop?](renovations.html) It is important to know how external factors can affect your business. We show how a competitor doing renovations on *their* shop could affect
     *your* sales!  
 
@@ -20,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 -   [Forecasts of sales, costs, and cash flow](forecasting.html)
 
--   [Assessing your data quality](dq.html)
+
 
 
 We can help you with similar analyses.

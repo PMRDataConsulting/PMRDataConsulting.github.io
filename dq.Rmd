@@ -1,18 +1,23 @@
 ---
 title: "Understand the Quality of Your Data"
-description: Is my data good enough for my purposes?
+description: Is your data good enough for your purposes?
 editor_options: 
   markdown: 
     wrap: 72
 ---
 
-Before starting on any statistical analysis, it is important to know  the quality of the data upon which the analysis will be based. We can perform a data quality assessment that provides overall assessments and recommendations for improving data quality. 
+At PMR Data Consulting, we specialize in hands-on data quality assessment. We start by engaging with you to understand your data landscape—what you have, how you use it, and what you plan to achieve with it. From there, we identify the highest-value data and dive deep into the details, uncovering issues, inconsistencies, and gaps. After thorough investigation, we present our findings, discuss them with you, and provide actionable recommendations to not only fix existing problems but also to prevent them from recurring in the future. Our goal is to ensure your data is clean, reliable, and ready to fuel your business success.
 
-Data quality is a continuum. The quality of a data set must be assessed with respect to its intended use, and the potential impact of any results derived from the data. 
+We've tackled many complex data challenges in the past. For instance, we uncovered instances where internet packet sizes were actually mislabeled as timestamps, skewing estimates of internet traffic on a web site. In another case, we found that when a system couldn't find a valid value to write to a database, it simply copied the previous value, causing significant data inaccuracies. We've also addressed issues like inconsistent spelling of data items, which led to suboptimal groupings and flawed models. These are just a few examples of how we dig deep into your data to uncover hidden issues and drive real improvements.
 
+<br>
+
+In the example below, we plot daily unit sales figures. Attempts to predict sales based on this data may prove difficult if the anomalies in the data are not addressed.
+<br>
+<br>
 ![](Screenshot3.png)
 
-In the example above, we plot daily unit sales figures. Attempts to predict sales based on this data may prove difficult if the anomalies in the data are not addressed.
+
 
 
 
