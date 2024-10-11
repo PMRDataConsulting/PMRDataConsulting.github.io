@@ -18,6 +18,9 @@ close_date <- make_date(2023, 2, 14)
 reopen_date <- make_date(2023, 3, 24)
 ```
 
+We can apply statistical analysis to help you understand the impact of various factors, even external ones, on your business. Here is an example.
+
+
 # Challenge
 
 Imagine you run a small coffee shop, and are looking at daily sales figures for July 2022 through October 2023. The sales figures are shown in the following plot. The challenge is to understand the impact of different factors on your sales.

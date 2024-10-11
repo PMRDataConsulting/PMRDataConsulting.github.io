@@ -6,6 +6,8 @@ editor_options:
     wrap: 72
 ---
 
+We can help you understand your customer base - who are your most valuable customers and how do they behave?
+
 # Challenge
 
 This organization was concerned about their shrinking donations.\
