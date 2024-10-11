@@ -1,0 +1,19 @@
+---
+title: "Statistical Analysis"
+description: What is your data telling you?
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+-   [What's up at the coffee shop?](renovations.html) It is important to know how external factors can affect your business. We show how a competitor doing renovations on *their* shop could affect
+    *your* sales!  
+
+-   [Is your customer base growing?](donorbase.html) Analyzing your customer base can help you decide whether to focus on preventing customer churn, recapturing former customers, or acquiring new customers.
+
+-   [Impactful insights hidden in demand data](ofb.html)
+
+-   [Forecasts of sales, costs, and cash flow](forecasting.html)
+
+<br>
+
