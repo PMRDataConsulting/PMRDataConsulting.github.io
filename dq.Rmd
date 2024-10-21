@@ -6,20 +6,50 @@ editor_options:
     wrap: 72
 ---
 
-At PMR Data Consulting, we specialize in hands-on data quality assessment. We start by engaging with you to understand your data landscape—what you have, how you use it, and what you plan to achieve with it. From there, we identify the highest-value data and dive deep into the details, uncovering issues, inconsistencies, and gaps. After thorough investigation, we present our findings, discuss them with you, and provide actionable recommendations to not only fix existing problems but also to prevent them from recurring in the future. Our goal is to ensure your data is clean, reliable, and ready to fuel your business success.
+At PMR Data Consulting, we specialize in hands-on data quality
+assessment. We start by engaging with you to understand your data
+landscape—what you have, how you use it, and what you plan to achieve
+with it. From there, we identify the highest-value data and dive deep
+into the details, uncovering issues, inconsistencies, and gaps. After
+thorough investigation, we present our findings, discuss them with you,
+and provide actionable recommendations to not only fix existing problems
+but also to prevent them from recurring in the future. Our goal is to
+ensure your data is clean, reliable, and ready to fuel your business
+success.
 
-We've tackled many complex data challenges across a wide array of industries. We uncovered instances where internet packet sizes were actually mislabeled as timestamps, skewing estimates of internet traffic on a web site. In another case, we found that when a system couldn't find a valid value to write to a database, it simply copied the previous value, causing significant data inaccuracies. We've also addressed issues like inconsistent spelling of data items, which led to suboptimal groupings and flawed models. These are just a few examples of how we dig deep into your data to uncover hidden issues and drive real improvements.
+We've tackled many complex data challenges across a wide array of
+industries. We uncovered instances where internet packet sizes were
+actually mislabeled as timestamps, skewing estimates of internet traffic
+on a web site. In another case, we found that when a system couldn't
+find a valid value to write to a database, it simply copied the previous
+value, causing significant data inaccuracies. We've also addressed
+issues like inconsistent spelling of data items, which led to suboptimal
+groupings and flawed models. These are just a few examples of how we dig
+deep into your data to uncover hidden issues and drive real
+improvements.
 
 <br>
 
+------------------------------------------------------------------------
 
+**Customer Testimonial:**
 
-![Attempts to predict daily sales based on this data may prove difficult if the anomalies in the data are not addressed](Screenshot3.png)
+![](gore_logo.png){width="15%"}
 
+::: {style="background-color:rgba(0, 95, 184,0.5);color:rgba(255, 255, 255); text-align:left; vertical-align: middle; padding:40px 10; margin-top:10px; padding-left: 40px; padding-right: 40px;padding-top: 40px;"}
+"Our company engaged Peter Rabinovitch to participate in an internal data quality audit. A year later, we engaged Peter again to conduct a
+quantitative analysis of data quality improvements that the company had made over that year. The results of Peter’s work were delivered in a
+timely fashion and communicated to the Board of Directors.
 
+Peter demonstrated a deep understanding of statistical analysis and processes and controls that support data quality.
 
+He was easy to work with, flexible, quick to respond to questions and concerns, and capable of communicating effectively across all levels
+within our organization.
 
+Peter’s reports are well written, clear, easy for a non-technical person to understand, and sufficiently supported with relevant information.
 
+We plan to continue working with Peter Rabinovitch and can recommend his services without reservation."
 
-
+-*Natalia Brattan, Director, Internal Audit*
+:::
 
