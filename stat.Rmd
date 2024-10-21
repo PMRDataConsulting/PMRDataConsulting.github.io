@@ -17,3 +17,14 @@ editor_options:
 
 <br>
 
+
+**Testimonial:**
+
+![](viamoinc_logo.jpeg){width="15%"}
+
+::: {style="background-color:rgba(0, 95, 184,0.5);color:rgba(255, 255, 255); text-align:left; vertical-align: middle; padding:40px 10; margin-top:10px; padding-left: 40px; padding-right: 40px;padding-top: 40px;"}
+"I was Peter's boss while he was at Viamo where he applied rigour and expertise to each problem. Each time, we ended up with a better decision through his analysis. He’s not afraid to speak the truth, even when it wasn’t what we hoped to hear and he adroitly mixes absolute professionalism with a wry sense of humour. He always explains complex topics (like various branches of statistics) in simple terms and has the patience to help others learn how to think more like a Data Scientist. Everyone who crosses his path is better off and more knowledgeable than before."
+
+-*Darryl Ricker, Chief Technology Officer, Viamo*
+:::
+
